@@ -1,0 +1,80 @@
+SHORTHANDS de alguns css
+---------------------------------------------------------------------------------
+BORDER: expessura -> estilo -> cor
+Ex:
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+
+    -> border: 10px solid darkslategray;
+---------------------------------------------------------------------------------
+PADDING: topo -> direita -> em baixo -> esquerda (ponteiro do relógio)
+Ex:
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    padding: 10px 10px 10px 10px;
+    -> padding: 10px; (todos os lados)
+
+    OBS: quando colocar 2 valores:
+        -> padding: 10px 20px;
+            1 - O primeiro valor se refere ao TOPO e EM BAIXO
+            2 - O segundo valor se refere á DIREITA e ESQUERDA
+            (padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;)
+---------------------------------------------------------------------------------
+MARGIN: topo -> direita -> em baixo -> esquerda (ponteiro do relógio)
+Ex:
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+    margin: 20px 20px 40px 20px;
+
+    OBS: Se quisesse centralizar:
+        margin: 20px auto 40px auto;
+                Mudando apenas a direita e esquerda para auto
+---------------------------------------------------------------------------------
+OUTLINE: expessura -> estilo -> cor
+Ex:
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: salmon;
+
+    -> outline: 5px dashed salmon;
+---------------------------------------------------------------------------------
+BORDER-RADIUS:
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -> border-radius: 20px
+
+    OBS: quando colocar 2 valores:
+        -> border-radius: 10px 20px;
+            1 - O primeiro valor se refere ao TOPO-ESQ e EM BAIXO-DIR
+            2 - O segundo valor se refere ao TOPO-DIR e TOPO-ESQ
+            (border-top-left-radius: 10px;
+             border-top-right-radius: 20px;
+             border-bottom-right-radius: 10px;
+             border-bottom-left-radius: 20px;)
+---------------------------------------------------------------------------------
+BOX-SHADOW: box-shadow: 4px 4px 9px 1px black;
+-> MANEIRA FÁCIL DE FAZER SOMBRA: DevTools, adiciona o box-shadow no código e clica no quadrado que aparece ao lado da linha do código para editar a sombra
+-> SOMBRA INTERNA = :inset 1px 1px..
+-> Deslocamento Horiz. -> Desloc. Vertic. -> Espalhamento -> Cor da Sombra
+
+1 - Descocamento Horiz. POSITIVO = DIREITA / NEGATIVO = ESQUERDA
+2 - Deslocamento Vertic. POSITIVO = PARA BAIXO / NEGATIVO = PARA CIMA
+---------------------------------------------------------------------------------
+BORDER-IMAGE:
+Ex:
+    border-image-source: url('borda.png');
+    border-image-slice: 27;
+    border-image-repeat: repeat;
+    -> border-image: url('borda.png') 27 repeat;
